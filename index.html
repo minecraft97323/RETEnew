@@ -186,18 +186,7 @@
 		  s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
-<!-- 引入多语言切换的js -->
-<script src="translate/translate.js"></script>
-<script>
-	translate.selectLanguageTag.show = false; //不出现的select的选择语言
-	translate.execute();//进行翻译
-</script>
-<style>
-	.translate_switch li{ display: inline;padding-right: 4px; }
-	.translate_switch .english:after{ content:'English' }
-	.translate_switch .chinese:after{ content:'简体中文' }
-	.translate_switch .chinese_tw:after{ content:'繁体中文' }
-</style>
+
 	</head>
 	<body>
 	<header role="banner" id="fh5co-header">
@@ -209,7 +198,7 @@
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 		         <a class="navbar-brand" href="#"><img id="navbar-logos" style="margin-top: -6px" src="static/image/logo-web.png"></a> 
 		        </div>
-		        <div id="navbar" class="navbar-collapse collapse translate_switch">
+		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="#" data-nav-section="home"><span>主页</span></a></li>
 		            <li><a href="#" data-nav-section="work"><span>MOD</span></a></li>
@@ -217,9 +206,6 @@
 		            <li><a href="#" data-nav-section="services"><span>特色</span></a></li>
 		            <li><a href="#" data-nav-section="about"><span>关于</span></a></li>
 		            <li><a href="#" data-nav-section="contact"><span>联系</span></a></li>
-	<li><a class="english" href="javascript:translate.changeLanguage('en');"><!-- 英语 --></a></li>
-	<li><a class="chinese" href="javascript:translate.changeLanguage('zh-CN');"><!-- 简体中文 --></a></li>
-	<li><a class="chinese_tw" href="javascript:translate.changeLanguage('zh-TW');"><!-- 繁体中文 --></a></li>
 		          </ul>
 		        </div>
 			    </nav>
